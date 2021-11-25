@@ -1,0 +1,20 @@
+
+.type{
+    color: DodgerBlue;
+    padding: 10px;
+    font-family: Arial;
+    text-align: center
+}
+.head{
+    color : crimson;
+    font-family :Georgia, serif;
+    text-align: center
+}
+
+.stats{
+    color : crimson
+
+}
+.para{
+    color: grey
+}

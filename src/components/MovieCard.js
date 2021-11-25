@@ -6,6 +6,7 @@ import DeleteIcon from '@mui/icons-material/Delete'
 import Card from '@mui/material/Card'
 import CardContent from  '@mui/material/CardContent'
 import CardActions from '@mui/material/CardActions'
+import Typography from '@mui/material/Typography'
 
 const MovieCard=(props)=>{ 
     const {movie} = props
@@ -15,10 +16,10 @@ const MovieCard=(props)=>{
      }
     return(
         <div>
-            <Card variant='outlined' style={{ minWidth : 275, backgroundColor : '#d3d3d3'}} >
+            <Card variant='outlined' style={{ height:100, Width : 500, backgroundColor : '#DCDCDC'}} >
                 <CardContent>
-                    <h3>Movie Name - {movie.name}</h3>
-                    <h3>Rating -{movie.rating}</h3>
+                <Typography> Movie Name - {movie.name}</Typography>
+                   <Typography>Rating -{movie.rating}</Typography> 
                 </CardContent>
                 <CardActions>
                     <IconButton arial-label='delete' onClick={()=>{handleRemove(movie.id)}} ><DeleteIcon/></IconButton>
